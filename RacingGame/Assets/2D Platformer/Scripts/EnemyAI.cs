@@ -28,6 +28,7 @@ namespace Platformer
             if(!triggerCollider.IsTouchingLayers(ground) || triggerCollider.IsTouchingLayers(wall))
             {
                 Flip();
+ 
             }
         }
         
