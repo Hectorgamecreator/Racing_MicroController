@@ -6,9 +6,13 @@ namespace Platformer
 {
     public class PlayerController : MonoBehaviour
     {
-        public float movingSpeed;
+        [SerializeField] private float movingSpeed = 5;
         public float jumpForce;
         private float moveInput;
+
+        public bool speedUp = false;
+      
+        [SerializeField] private int speedBoost = 5;
 
         private bool facingRight = false;
         [HideInInspector]
@@ -95,6 +99,20 @@ namespace Platformer
                 gameManager.coinsCounter += 1;
                 Destroy(other.gameObject);
             }
+        }
+
+        public void SpeedUpEnabled()
+        {
+            speedUp = true;
+            movingSpeed *= speedBoost;
+            StartCoroutine(SpeedUpDisableRoutine());
+        }
+
+        IEnumerator SpeedUpDisableRoutine()
+        {
+            yield return new WaitForSeconds(2.0f);
+
+            movingSpeed /= speedBoost;
         }
     }
 }
