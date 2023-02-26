@@ -7,7 +7,8 @@ TagManager:
   - Enemy
   - Coin
   - floor
-  - wall
+  - FallDetector
+  - NextLevel
   layers:
   - Default
   - TransparentFX

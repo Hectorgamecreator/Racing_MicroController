@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 namespace Platformer
 {
@@ -34,7 +35,7 @@ namespace Platformer
 
         private void ReloadLevel()
         {
-            Application.LoadLevel(Application.loadedLevel);
+            SceneManager.LoadScene("End");
         }
     }
 }
