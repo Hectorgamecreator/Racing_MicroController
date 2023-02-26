@@ -9,8 +9,8 @@ namespace Platformer
     {
         public bool JumpBoost = false;
 
-        [SerializeField] private float jumpForce = 10;
-        [SerializeField] private int JumpPower = 10;
+        [SerializeField] private float jumpForce = 5;
+        [SerializeField] private int JumpPower = 5;
         private float moveInput;
 
         public bool speedUp = false;
