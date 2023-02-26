@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1449881804780183223}
   - component: {fileID: 2367412024886369351}
   m_Layer: 0
-  m_Name: Enemy
+  m_Name: Evil Bunny
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

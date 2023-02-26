@@ -107,12 +107,16 @@ namespace Platformer
 
         private void OnTriggerEnter2D(Collider2D collision)
         {
-            if(collision.tag == "FallDetector")
+            if (collision.tag == "FallDetector")
             {
                 transform.position = respawnPoint;
             }
+            else if (collision.tag == "CheckPoint")
+            {
+                respawnPoint = transform.position;
+            }
 
-           else if (collision.gameObject.tag == "Coin")
+            else if (collision.gameObject.tag == "Coin")
             {
                 gameManager.coinsCounter += 1;
                 Destroy(collision.gameObject);
