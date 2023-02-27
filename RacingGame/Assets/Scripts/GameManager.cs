@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
+
 
 namespace Platformer
 {
@@ -13,7 +15,7 @@ namespace Platformer
         public GameObject playerGameObject;
         private PlayerController player;
         public GameObject deathPlayerPrefab;
-        public Text coinText;
+        public TextMeshProUGUI coinText;
 
         void Start()
         {
