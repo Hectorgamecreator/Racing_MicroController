@@ -37,6 +37,11 @@ public class LoadScene : MonoBehaviour
 
             LoadScene("Start");
         }
+        if (SceneManager.GetActiveScene().name == "Win")
+        {
+
+            LoadScene("Start");
+        }
 
         void LoadScene(string name)
         {
